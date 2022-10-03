@@ -4,9 +4,9 @@ const Nav = () => {
   return (
     <nav className="nav">
         
-        <a href='/'className='tiny.ai'>Tiny.ai</a>
+        <a href='/'className='site-title'>Tiny.ai</a>
         <ul className="pages">
-            <li>
+            <li className='active'>
             <a href='/features'>Features</a>
             </li>
             <li>
