@@ -39,4 +39,7 @@
 .nav li:hover{
     transform:scale(1.1);
 }
-
+.comp{
+    text-align:center;
+    padding-top: 2rem;
+}
