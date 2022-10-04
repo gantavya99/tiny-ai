@@ -6,8 +6,8 @@ const Nav = () => {
         
         <a href='/'className='site-title'>Tiny.ai</a>
         <ul className="pages">
-            <li className='active'>
-            <a href='/features'>Features</a>
+            <li>
+            <a href='/features' className='active'>Features</a>
             </li>
             <li>
                 <a href='/Pricing'>Pricing</a>
