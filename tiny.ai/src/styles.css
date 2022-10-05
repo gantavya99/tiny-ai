@@ -1,6 +1,8 @@
 *{
     box-sizing:border-box;
     margin:0;
+    background-color:rgb(251, 249, 249);
+    
 }
 .nav{
     background-color:rgb(251, 249, 249);
@@ -20,7 +22,7 @@
     gap:1rem;
     
 }
-.site-title {
+.tiny{
     font-size:2rem; 
     font-weight: bold;
 }
@@ -33,13 +35,27 @@
     padding:0.25rem;
     
 }
-.nav li.active{
-    background-color:rgb(176, 167, 167);
-}
+
 .nav li:hover{
     transform:scale(1.1);
 }
 .comp{
     text-align:center;
     padding-top: 2rem;
+}
+.hero{
+    display:flex;
+    justify-content: space-between;
+    padding-top:3rem;
+}
+.hero-image{
+    height: 40vh;
+    float:right;
+    padding-right:2rem;
+    margin-right:6rem;
+}
+.title{
+    font-size:3.5rem;
+    font-weight:200;
+    margin-left:2rem;
 }

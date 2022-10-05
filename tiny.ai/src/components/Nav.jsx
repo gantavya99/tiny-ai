@@ -4,24 +4,24 @@ const Nav = () => {
   return (
     <nav className="nav">
         
-        <a href='/'className='site-title'>Tiny.ai</a>
+        <a href='/'className='tiny'>Tiny.ai</a>
         <ul className="pages">
             <li>
-            <a href='/features' className='active'>Features</a>
+            <a href='/features'>Features</a>
             </li>
             <li>
                 <a href='/Pricing'>Pricing</a>
             </li>
             <li>
-            <a href='/'>Resources</a>
+            <a href='/Resources'>Resources</a>
             </li>
         </ul>
         <ul className="login">
         <li>
-            <a href='/'>Login</a>
+            <a href='/login'>Login</a>
             </li>
             <li>
-            <a href='/'>Sign Up</a>
+            <a href='/signUp'>Sign Up</a>
             </li>
         </ul>
     </nav>
