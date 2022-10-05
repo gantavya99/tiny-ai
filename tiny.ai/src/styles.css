@@ -156,3 +156,6 @@
     font-size: 1.5em;
     cursor:pointer;
 }
+.copy-btn:hover{
+    background-color:#35aeea;
+}
