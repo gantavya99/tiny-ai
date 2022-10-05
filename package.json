@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "cdbreact": "^1.5.3",
+    "react-copy-to-clipboard": "^5.1.0",
     "styled-components": "^5.3.6"
   },
   "devDependencies": {

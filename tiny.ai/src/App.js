@@ -1,8 +1,8 @@
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
-import { ReactDOM } from "react";
 import Link from "./components/Link";
 import ShortLink from "./components/ShortLink";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
      <Hero />
      <Link />
      <ShortLink />
+      <Footer/>
     </div>
   );
 }
