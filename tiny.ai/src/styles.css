@@ -43,19 +43,29 @@
     text-align:center;
     padding-top: 2rem;
 }
-.hero{
+.container{
     display:flex;
-    justify-content: space-between;
+    flex-direction:row;
+    justify-content:space-between;
+}
+.hero{
+    flex-direction:column;
     padding-top:3rem;
 }
 .hero-image{
     height: 40vh;
     float:right;
     padding-right:2rem;
-    margin-right:6rem;
+    margin-right:3rem;
 }
 .title{
-    font-size:3.5rem;
+    font-size:3rem;
     font-weight:200;
     margin-left:2rem;
+}
+.title-2{
+    margin-left:2rem;
+    padding-top:4rem;
+    font-weight:bold;
+    color:#8f4a3a;
 }

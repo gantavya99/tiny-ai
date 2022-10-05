@@ -7,11 +7,10 @@ const Hero = () => {
       <h1 className="title">
             Making the Web Tiny For You!
         </h1>
-        <img src={heroimg} className="hero-image"/>
-      </div>
-       
         <h2 className="title-2">Increase your Web Application's perrformance using Tiny.ai</h2>
-    </div>
+      </div>
+      <div><img src={heroimg} className="hero-image"/></div>
+        </div>
   )
 }
 
