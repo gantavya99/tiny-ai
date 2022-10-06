@@ -1,7 +1,4 @@
 import React from 'react';
-import axios from 'axios';
-import Link from './Link';
-import { useState } from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
