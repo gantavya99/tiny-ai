@@ -6,7 +6,13 @@ const Link = () => {
     function getData(val){
       setLink(val.target.value);
     }
-    console.log(print?link:null)
+    function onClickhandler(){
+      if(link===""){
+        alert("Please enter a URL");
+      }
+      setPrint(true);
+      alert(link);
+    }
    
   return (
     <div className="link-container">
@@ -14,7 +20,7 @@ const Link = () => {
      placeholder={link}
      onChange={getData}/>
     <button className="btn"
-    onClick={()=>setPrint(true)}
+    onClick={onClickhandler}
     >Submit
     </button>
      </div>
