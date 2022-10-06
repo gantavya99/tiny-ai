@@ -9,6 +9,7 @@ function App() {
   const [link,setLink]=useState("");
   const [shortLink, setShortLink] = useState("");
   // console.log(shortLink);
+ 
   return (
     <div className="App">
      <Nav />

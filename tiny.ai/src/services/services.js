@@ -4,9 +4,9 @@ export const fetchData = async({link,setShortLink})=>{
       const response = await axios( `https://api.shrtco.de/v2/shorten?url=${link}`
       );
          setShortLink(response.data.result.full_short_link);
-      
+      console.log(response);
     }
     catch(e){
-      console.log(e);
+      alert(`error ${e}`)
     }
   };

@@ -2,13 +2,6 @@ import React from 'react';
 import { useState } from 'react';
 import { fetchData } from '../services/services';
 const Link = ({setLink , link, setShortLink}) => {
-    
-    const onClickShortner = function(){
-      if(link === "") {
-        alert("Please enter a URL");
-        return;
-      }
-    }
    
   return (
     <div className="link-container">
@@ -21,6 +14,7 @@ const Link = ({setLink , link, setShortLink}) => {
     onClick={()=>{
       fetchData({link,setShortLink});
     }}
+    
     
     >Submit </button>
      </div>

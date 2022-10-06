@@ -3,34 +3,33 @@ import axios from 'axios';
 import Link from './Link';
 import { useState } from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
-
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ShortLink = ({link,shortLink}) => {
-
-  
-  //  const fetchData = async()=>{
-  //   try{
-  //     const response = await axios( `https://api.shrtco.de/v2/shorten?url=${link}`
-  //     );
-  //     setShortLink(response.data.result.full_short_link);
-  //     console.log(response);
-  //   }
-  //   catch(e){
-  //     console.log(e);
-  //   }
-  // };
+  const notify=()=>toast("Copied to Clipboard !")
   return (
     <div className="Short-link">
-          
-    {/* <input type="text" className="shorten-link" 
-    placeholder="Your tiny link will be displayed here"/> */}
-    {/* <CopyToClipboard text={shortLink}> */}
-    <button className="copy-btn">COPY</button>
-    {/* </CopyToClipboard> */}
+      <CopyToClipboard text={shortLink}>
+      <button onClick ={notify}
+      className="copy-btn">COPY</button>
+      </CopyToClipboard>
+    
     <div className="result">
       {shortLink}
     </div>
+    <ToastContainer
+      position="top-left"
+      autoClose={2000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+      
+        />
     </div>
   )
 }
