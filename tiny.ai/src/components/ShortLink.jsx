@@ -28,7 +28,9 @@ const ShortLink = ({link,shortLink}) => {
     {/* <CopyToClipboard text={shortLink}> */}
     <button className="copy-btn">COPY</button>
     {/* </CopyToClipboard> */}
-    {shortLink}
+    <div className="result">
+      {shortLink}
+    </div>
     </div>
   )
 }

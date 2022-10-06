@@ -21,6 +21,7 @@ const Link = ({setLink , link, setShortLink}) => {
     onClick={()=>{
       fetchData({link,setShortLink});
     }}
+    
     >Submit </button>
      </div>
   )
