@@ -9,7 +9,7 @@ import CopyToClipboard from 'react-copy-to-clipboard';
 const ShortLink = ({link}) => {
 
   const [shortLink, setShortLink] = useState("");
-  const fetchData=async()=>{
+   const fetchData = async()=>{
     try{
       const response = await axios( `https://api.shrtco.de/v2/shorten?url=${link}`
       );

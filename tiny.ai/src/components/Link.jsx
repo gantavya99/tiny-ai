@@ -17,7 +17,9 @@ const Link = ({setLink,link}) => {
      onChange={(e)=>{setLink(e.target.value)}}/>
 
     <button className="btn"
-    onClick={onClickShortner}
+    onClick={()=>{
+      fetchData();
+    }}
     >Submit </button>
   
      
