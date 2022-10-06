@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
-const Link = ({setLink,link}) => {
+import { fetchData } from '../services/services';
+const Link = ({setLink , link, setShortLink}) => {
     
     const onClickShortner = function(){
       if(link === "") {
@@ -18,11 +19,9 @@ const Link = ({setLink,link}) => {
 
     <button className="btn"
     onClick={()=>{
-      fetchData();
+      fetchData({link,setShortLink});
     }}
     >Submit </button>
-  
-     
      </div>
   )
 

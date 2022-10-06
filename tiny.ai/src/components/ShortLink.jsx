@@ -6,29 +6,29 @@ import CopyToClipboard from 'react-copy-to-clipboard';
 
 
 
-const ShortLink = ({link}) => {
+const ShortLink = ({link,shortLink}) => {
 
-  const [shortLink, setShortLink] = useState("");
-   const fetchData = async()=>{
-    try{
-      const response = await axios( `https://api.shrtco.de/v2/shorten?url=${link}`
-      );
-      setShortLink(response.data.result.full_short_link);
-      console.log(response);
-    }
-    catch(e){
-      console.log(e);
-    }
-  };
+  
+  //  const fetchData = async()=>{
+  //   try{
+  //     const response = await axios( `https://api.shrtco.de/v2/shorten?url=${link}`
+  //     );
+  //     setShortLink(response.data.result.full_short_link);
+  //     console.log(response);
+  //   }
+  //   catch(e){
+  //     console.log(e);
+  //   }
+  // };
   return (
     <div className="Short-link">
           
     {/* <input type="text" className="shorten-link" 
     placeholder="Your tiny link will be displayed here"/> */}
-    <CopyToClipboard text={shortLink}>
+    {/* <CopyToClipboard text={shortLink}> */}
     <button className="copy-btn">COPY</button>
-    </CopyToClipboard>
-   
+    {/* </CopyToClipboard> */}
+    {shortLink}
     </div>
   )
 }
